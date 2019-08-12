@@ -5,6 +5,22 @@ O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consis
 - uma listagem de reembolso
 - uma página de criação de reembolso
 
+
+## Pontuacao
+
+Para o teste ser considerado precisa atender aos requisitos minimos de desenvolvimento, será analisado também a organizacao do código.
+
+#### Requisitos
+
+
+
+## Tecnologias
+
+Banco de dados: MySQL ou MongoDB
+Linguagem: PHP
+Framework: Laravel
+Framework de teste: PHPUnit
+
 ## Funcionalidades
 
 ### Criação de reembolso
