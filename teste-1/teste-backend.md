@@ -60,6 +60,14 @@ A listagem deve conter todos os dados previamente cadastrados e páginados de 10
 
 ### Relatório
 
-A API deve ser capaz de gerar um relatório do valor total de reembolsos por usuário e por mes
+A API deve ser capaz de através de paremtros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mes.
+
+```js
+{
+  month: 9,
+  year: 2019,
+}
+```
+
 
 
