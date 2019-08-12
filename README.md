@@ -1,8 +1,14 @@
 # Teste Front-end Tradeup
 
 ## Desafio
-O desafio é fazer uma tela simples de pedido de reembolso.
-A tela consiste em um formulário com alguns campos para serem aceitos:
+O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consiste em duas páginas:
+- uma listagem de reembolso
+- uma página de criação de reembolso
+
+## Funcionalidades
+
+### Criação de reembolso
+Na criação de reembolso, haverá um formulário com alguns campos para serem aceitos:
 - Nome completo
 - CPF/CNPJ
 - Cargo
@@ -26,6 +32,14 @@ Outras despesas - ID: OTHER
 
 Ao salvar, bater no endpoint com  os dados dos reembolsos e mostrar um **modal** com o **sucesso** ou **erro** do processo.
 
+---
+
+### Listagem de reembolso
+Na listagem, será necessário apenas bater na API e colocar os dados que forem enviados para serem mostrados na tela.
+
+---
+
+## Dados
 Os dados do reembolso devem ser enviados da seguinte maneira:
 ```js
 {
