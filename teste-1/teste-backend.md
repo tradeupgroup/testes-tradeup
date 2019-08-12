@@ -8,10 +8,11 @@ O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consis
 
 ## Pontuacao
 
-Para o teste ser considerado precisa atender aos requisitos minimos de desenvolvimento, será analisado também a organizacao do código.
+Para o teste ser considerado precisa atender aos requisitos minimos será analisado
 
-#### Requisitos
-
+- organizacao do código
+- uso dos verbos HTTP
+- boas práticas de API Rest
 
 
 ## Tecnologias
@@ -20,42 +21,11 @@ Banco de dados: MySQL ou MongoDB
 Linguagem: PHP
 Framework: Laravel
 Framework de teste: PHPUnit
+API: Rest
 
 ## Funcionalidades
 
-### Criação de reembolso
-Na criação de reembolso, haverá um formulário com alguns campos para serem aceitos:
-- Nome completo
-- CPF/CNPJ
-- Cargo
-
-Após os campos definidos dos usuários, deverá ser possível adicionar os reembolsos:
-Limite de no máximo 15 reembolsos por vez.
-Também deverá ser possível remover cada reembolso.
-No reembolso deverá ter:
-- Data
-- Tipos de Reembolso
-```
-Passagem/Hospedagem - ID: TICKET
-Alimentação - ID: FOOD
-Telef. / Lavanderia - ID: TEL
-Transporte - ID: TRANS
-Estacionament/Pedágio - ID: PARKING
-Outras despesas - ID: OTHER
-```
-- Descrição do reembolso
-- Valor do reembolso
-
-Ao salvar, bater no endpoint com  os dados dos reembolsos e mostrar um **modal** com o **sucesso** ou **erro** do processo.
-
----
-
-### Listagem de reembolso
-A listagem deve conter todos os dados previamente cadastrados e páginados de 10 em 10 itens por página.
-
----
-
-## Insercao de dados
+### Cadastro de reembolso
 
 Implementar um serviço que receba os dados do reembolso e persista no banco de dados:
 
@@ -66,11 +36,30 @@ Implementar um serviço que receba os dados do reembolso e persista no banco de 
   jobRole: 'Não sei',
   refunds: [
     {
-      date: '2019-08-12T09:33:20-03:00',
+      date: 2019-08-12T09:33:20-03:00',
       type: 'TICKET',
       description: 'Gastei com a passagem para Porto Alegre'
       value: 108.90
     }
-  ]
+  ],
+  createdAt : '2019-08-12T09:33:20-03:00'
 }
 ```
+
+---
+### Edicao de reembolso
+
+A edicao de desconto deve permitir apenas a alteracao do valor
+
+---
+
+### Listagem de reembolso
+A listagem deve conter todos os dados previamente cadastrados e páginados de 10 em 10 itens por página.
+
+---
+
+### Relatório
+
+A API deve ser capaz de gerar um relatório do valor total de reembolsos por usuário e por mes
+
+
