@@ -35,10 +35,11 @@ Você tem 7 dias a partir da data que o desafio foi enviado pra você.
 
 - Banco de dados: MySQL ou MongoDB
 - Linguagem: PHP
-- Framework: Laravel
+- Framework: [Laravel](https://laravel.com/docs/5.8)
 - Framework de teste: PHPUnit
 - API: Rest
 - Versionamento: Github
+- Arquitetura: MVC ou MVP
 
 ## Funcionalidades
 
