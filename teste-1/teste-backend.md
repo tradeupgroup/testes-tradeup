@@ -16,6 +16,7 @@ Para o teste ser considerado precisa atender aos requisitos minimos, será anali
 - organizacao do código
 - uso dos verbos HTTP
 - boas práticas de API Rest
+- testes unitários
 
 ### Será um diferencial
 - Fazer upload de foto para evidencia dos gastos no reembolso
