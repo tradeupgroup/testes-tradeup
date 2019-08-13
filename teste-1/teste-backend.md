@@ -17,11 +17,11 @@ Para o teste ser considerado precisa atender aos requisitos minimos será analis
 
 ## Tecnologias
 
-Banco de dados: MySQL ou MongoDB
-Linguagem: PHP
-Framework: Laravel
-Framework de teste: PHPUnit
-API: Rest
+- Banco de dados: MySQL ou MongoDB
+- Linguagem: PHP
+- Framework: Laravel
+- Framework de teste: PHPUnit
+- API: Rest
 
 ## Funcionalidades
 
