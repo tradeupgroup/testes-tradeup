@@ -2,11 +2,14 @@
 
 ## Desafio
 O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consiste em duas páginas:
-- uma listagem de reembolso
-- uma página de criação de reembolso
+- listagem de reembolso
+- criação de reembolso
+- edição de reembolso
+- exclusão de reembolso
+- relatório
 
 
-## Pontuacao
+## Pontuação
 
 Para o teste ser considerado precisa atender aos requisitos minimos será analisado
 
@@ -47,7 +50,7 @@ Implementar um serviço que receba os dados do reembolso e persista no banco de 
 ```
 
 ---
-### Edicao de reembolso
+### Edição de reembolso
 
 A edicao de desconto deve permitir apenas a alteracao do valor
 
@@ -57,14 +60,14 @@ A edicao de desconto deve permitir apenas a alteracao do valor
 A listagem deve conter todos os dados previamente cadastrados e páginados de 10 em 10 itens por página.
 
 ---
-### Exclusao de reembolso
+### Exclusão de reembolso
 A exclusao do reembolso deve ser [softdelete](https://laravel.com/docs/5.8/eloquent#soft-deleting).
 
 ---
 
 ### Relatório
 
-A API deve ser capaz de através de paremtros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mes.
+A API deve ser capaz de através de paremetros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mes.
 
 ```js
 {
@@ -83,6 +86,7 @@ refunds: quantidade total de reembolsos
        month: 9,
        year: 2019,
        totalRefunds: 234.00,
+       refunds: 5
        
      }
 ]
