@@ -5,6 +5,18 @@ O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consis
 - uma listagem de reembolso
 - uma página de criação de reembolso
 
+### Pontuação
+Será necessário para concluir o teste:
+- Apenas código front-end será considerado no projeto (HTML, CSS, JavaScript).
+- Frameworks CSS não serão permitidos. Todo código CSS deve ser escrito por você.
+- Você pode utilizar pré-processadores CSS à vontade. 
+- O projeto pode ser escrito em javascript puro ou utilizar frameworks como Vue.js, React ou outro.
+- Gerenciadores de pacotes e task runners podem ser usados à vontade.
+- O projeto precisa ser responsivo, funcionando tanto em desktop quando mobile.
+
+### Prazo
+Você tem 14 dias para a entrega do projeto a partir da data que o desafio foi enviado para você.
+
 ## Funcionalidades
 
 ### Criação de reembolso
@@ -36,6 +48,7 @@ Ao salvar, bater no endpoint com  os dados dos reembolsos e mostrar um **modal**
 
 ### Listagem de reembolso
 Na listagem, será necessário apenas bater na API e colocar os dados que forem enviados para serem mostrados na tela.
+Nessa tela, será possível excluir os reembolsos.
 
 ---
 
@@ -56,3 +69,7 @@ Os dados do reembolso devem ser enviados da seguinte maneira:
   ]
 }
 ```
+
+### Entrega
+- Desenvolva e versione esse projeto usando git e publique um repositório no GitHub.
+- Crie um README com instruções claras sobre como executar seu projeto.
