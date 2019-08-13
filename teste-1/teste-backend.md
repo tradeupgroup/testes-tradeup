@@ -57,6 +57,10 @@ A edicao de desconto deve permitir apenas a alteracao do valor
 A listagem deve conter todos os dados previamente cadastrados e páginados de 10 em 10 itens por página.
 
 ---
+### Exclusao de reembolso
+A exclusao do reembolso deve ser [softdelete](https://laravel.com/docs/5.8/eloquent#soft-deleting).
+
+---
 
 ### Relatório
 
@@ -67,6 +71,21 @@ A API deve ser capaz de através de paremtros enviados na requisicao gerar um re
   month: 9,
   year: 2019,
 }
+```
+O retorno deve ser uma lista com os detalhes
+
+totalRefunds: soma total dos valores (value)
+refunds: quantidade total de reembolsos
+
+```js
+[
+     {
+       month: 9,
+       year: 2019,
+       totalRefunds: 234.00,
+       
+     }
+]
 ```
 
 
