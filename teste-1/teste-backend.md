@@ -1,7 +1,7 @@
 # Teste Back-end Tradeup
 
 ## Desafio
-O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consiste em duas páginas:
+O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consiste em:
 - listagem de reembolso
 - criação de reembolso
 - edição de reembolso
@@ -17,6 +17,11 @@ Para o teste ser considerado precisa atender aos requisitos minimos será analis
 - uso dos verbos HTTP
 - boas práticas de API Rest
 
+### Será um diferencial
+- Fazer upload de foto para evidencia dos gastos no reembolso
+
+## Envio
+Voce deve enviar a documentacao pelo Postman, Swager ou Insomnia e publicar um repositório no seu Github.
 
 ## Tecnologias
 
@@ -25,6 +30,7 @@ Para o teste ser considerado precisa atender aos requisitos minimos será analis
 - Framework: Laravel
 - Framework de teste: PHPUnit
 - API: Rest
+- Versionamento: Github
 
 ## Funcionalidades
 
