@@ -22,6 +22,7 @@ Para o teste ser considerado precisa atender aos requisitos minimos, será anali
 - Fazer upload de foto para evidencia dos gastos no reembolso
 - Além do relatório em json, poder baixar o relatório em csv 
 - Fazer autenticação
+- Aprovar o reembolso e bloquear edições dposteriores do reembolso
 
 ## Entrega
 
