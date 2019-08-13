@@ -21,8 +21,13 @@ Para o teste ser considerado precisa atender aos requisitos minimos será analis
 - Fazer upload de foto para evidencia dos gastos no reembolso
 - Além do relatório em json, poder baixar o relatório em csv 
 
-## Envio
-Voce deve enviar a documentacao pelo Postman, Swager ou Insomnia e publicar um repositório no seu Github.
+## Entrega
+
+### Envio
+Você deve enviar a documentação pelo Postman, Swager ou Insomnia e publicar um repositório no seu Github.
+
+### Prazo
+Você tem 7 dias a partir da data que o desafio foi enviado pra você.
 
 ## Tecnologias
 
