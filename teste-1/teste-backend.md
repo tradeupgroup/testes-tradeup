@@ -11,7 +11,7 @@ O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consis
 
 ## Pontuação
 
-Para o teste ser considerado precisa atender aos requisitos minimos será analisado
+Para o teste ser considerado precisa atender aos requisitos minimos, será analisado:
 
 - organizacao do código
 - uso dos verbos HTTP
@@ -20,6 +20,7 @@ Para o teste ser considerado precisa atender aos requisitos minimos será analis
 ### Será um diferencial
 - Fazer upload de foto para evidencia dos gastos no reembolso
 - Além do relatório em json, poder baixar o relatório em csv 
+- Fazer autenticação
 
 ## Entrega
 
