@@ -83,8 +83,8 @@ A API deve ser capaz de através de paremetros enviados na requisicao gerar um r
 ```
 O retorno deve ser uma lista com os detalhes
 
-totalRefunds: soma total dos valores (value)
-refunds: quantidade total de reembolsos
+- totalRefunds: soma total dos valores (value)
+- refunds: quantidade total de reembolsos
 
 ```js
 [
