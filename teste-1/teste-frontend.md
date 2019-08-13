@@ -70,6 +70,6 @@ Os dados do reembolso devem ser enviados da seguinte maneira:
 }
 ```
 
-### Entrega
+## Entrega
 - Desenvolva e versione esse projeto usando git e publique um repositório no GitHub.
 - Crie um README com instruções claras sobre como executar seu projeto.
