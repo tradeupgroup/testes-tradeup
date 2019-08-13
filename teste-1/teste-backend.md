@@ -64,7 +64,7 @@ Implementar um serviço que receba os dados do reembolso e persista no banco de 
 ---
 ### Edição de reembolso
 
-A edicao de desconto deve permitir apenas a alteracao do valor
+A edicao de desconto deve permitir apenas a alteração do valor
 
 ---
 
@@ -73,13 +73,13 @@ A listagem deve conter todos os dados previamente cadastrados e páginados de 10
 
 ---
 ### Exclusão de reembolso
-A exclusao do reembolso deve ser [softdelete](https://laravel.com/docs/5.8/eloquent#soft-deleting).
+A exclusão do reembolso deve ser [softdelete](https://laravel.com/docs/5.8/eloquent#soft-deleting).
 
 ---
 
 ### Relatório
 
-A API deve ser capaz de através de paremetros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mes.
+A API deve ser capaz de através de parâmetros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mes.
 
 ```js
 {
