@@ -26,7 +26,7 @@ Para o teste ser considerado precisa atender aos requisitos minimos, será anali
 ## Entrega
 
 ### Envio
-Você deve enviar a documentação das requisições pelo [Postman](https://www.getpostman.com/), [Swagger](https://swagger.io/) ou Insomnia e publicar um repositório no seu Github.
+Você deve enviar a documentação das requisições pelo [Postman](https://www.getpostman.com/) e publicar um repositório no seu Github.
 
 ### Prazo
 Você tem 7 dias a partir da data que o desafio foi enviado pra você.
