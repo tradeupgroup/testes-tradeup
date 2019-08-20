@@ -1,91 +1,158 @@
 # Teste Mobile Tradeup
 
-## Desafio
+## Objetivo
 
-O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consiste em duas telas:
+Neste teste, o seu objetivo é montar um sistema simples, onde será necessário
+fazer um CRUD com autenticação e duas páginas que exibem os dados providos
+de uma API Rest, fornecida por nós.
 
-- uma listagem de reembolso, com opções para criar, editar e excluir reembolsos.
-- uma tela de criação de reembolso.
+## Tecnologias
 
-### Pontuação
+- React Native
+- Git
 
-Será necessário para concluir o teste:
+Sinta-se livre para usar bibliotecas como Redux, Styled Components, Glamorous,
+React Navigation, entre outros (se tiver alguma dúvida, pode perguntar também).
 
-- O framework utilizado deverá ser obrigatoriamente React Native.
-- Poderá ser utilizado qualquer biblioteca, Redux, Styled Components, Glamorous, React Navigation, etc.
-- Deverá ser utilizado git para versionamento.
-- A organização do código será avaliada.
-- O uso de hooks, será um diferencial.
-- O código deve funcionar em ambas as plataformas, Android e IOS.
+## Requisitos
 
-### Prazo
+Sinta-se livre para cumprir os requisitos da forma que julgar melhor, o
+importante é que seja possível executar todas as ações descritas neles.
 
-Você tem 14 dias para a entrega do projeto a partir da data que o desafio foi enviado para você.
+Você vai perceber que os requisitos são relativamente vagos, pois queremos ver
+as suas escolhas e o que julga melhor para completar a tarefa.
 
-## Funcionalidades
+- O APP consiste em três telas, sendo a primeira uma tela para o usuário efetuar
+  login, e outras duas telas para o usuário autenticado, a segunda tela seria uma
+  listagem de usuários cadastrados e a terceira tela, para ver os detalhes de um usuário.
+- Não se preocupe com marcas, imagens bonitas, etc. O que será avaliado é a
+  usabilidade, a qualidade do código e a eficiência.
+- Para tela de Login:
+  - Deve ser necessário fornecer email e senha para efetuar login
+- Para listagem de usuários:
+  - Para cada item do endpoint de usuários, deve ser exibido o nome, email e avatar.
+  - Ao clicar em um item, deve-se ir para a página de detalhes do usuário
+- Para detalhe do usuário
+  - Devem ser exibidas as mesmas informações da listagem.
 
-### Listagem de reembolso
+## Entregável
 
-Na listagem, será necessário apenas bater na API e colocar os dados que forem enviados para serem mostrados na tela.
-Nessa tela, será possível:
+- Seu código deve estar funcionando em ambas as plataformas, Android e IOS.
+- Repositório no Github com o seu código.
+- O README do seu projeto deve conter:
+  - Instruções para rodar o projeto, caso necessário.
+  - Tecnologias usadas e a razão da escola delas.
 
-- Excluir um ou mais reembolsos.
-- Editar um reembolso.
-- Cadastrar um novo reembolso.
+## Prazo
 
----
-
-### Criação de reembolso
-
-Na criação de reembolso, haverá um formulário com alguns campos que serão validados pela API:
-
-- Nome completo
-- CPF/CNPJ
-- Cargo
-
-Após os campos definidos do usuário, deverá ser possível adicionar os reembolsos:
-No reembolso deverá ter:
-
-- Data
-- Tipos de Reembolso
-
-```
-Passagem/Hospedagem - ID: TICKET
-Alimentação - ID: FOOD
-Telef. / Lavanderia - ID: TEL
-Transporte - ID: TRANS
-Estacionament/Pedágio - ID: PARKING
-Outras despesas - ID: OTHER
-```
-
-- Descrição do reembolso
-- Valor do reembolso
-
-Ao salvar, bater no endpoint com os dados dos reembolsos e mostrar um feedback para o usuário de **sucesso** ou **erro** do processo.
-
----
+Você tem 7 dias para a entrega do projeto a partir da data que o desafio foi enviado para você.
 
 ## Dados
 
-Os dados do reembolso devem ser enviados da seguinte maneira:
+### Autenticação:
+
+##### Request
+
+POST [/api/login](https://reqres.in/api/login)
 
 ```js
 {
-  name: 'Gabriel Josefino',
-  identification: '00000000000',
-  jobRole: 'Não sei',
-  refunds: [
-    {
-      date: '2019-08-12T09:33:20-03:00',
-      type: 'TICKET',
-      description: 'Gastei com a passagem para Porto Alegre'
-      value: 108.90
-    }
-  ]
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
 }
 ```
 
-## Entrega
+##### Response
 
-- Desenvolva e versione esse projeto usando git e publique um repositório no GitHub.
-- Crie um README com instruções claras sobre como executar seu projeto.
+200
+
+```js
+{
+    "token": "QpwL5tke4Pnpja7X4"
+}
+```
+
+### Listagem de usuários:
+
+##### Request
+
+GET [/api/users?page=2](https://reqres.in/api/users?page=2)
+
+##### Response
+
+200
+
+```js
+{
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+        }
+    ]
+}
+```
+
+### Listagem de usuários:
+
+##### Request
+
+GET [/api/users/2](https://reqres.in/api/users/2)
+
+##### Response
+
+200
+
+```js
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+    }
+}
+```
