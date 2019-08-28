@@ -6,7 +6,6 @@ O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consis
 - criação de reembolso
 - edição de reembolso
 - exclusão de reembolso
-- relatório
 
 
 ## Pontuação
@@ -18,11 +17,12 @@ Para o teste ser considerado precisa atender aos requisitos minimos, será anali
 - boas práticas de API Rest
 - testes unitários
 
-### Será um diferencial
+### Será um diferencial (não é obrigatório)
 - Fazer upload de foto para evidencia dos gastos no reembolso
 - Além do relatório em json, poder baixar o relatório em csv 
 - Fazer autenticação
 - Aprovar o reembolso e bloquear edições dposteriores do reembolso
+- Relatório
 
 ## Entrega
 
