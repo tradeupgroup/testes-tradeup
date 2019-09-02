@@ -41,7 +41,7 @@ as suas escolhas e o que julga melhor para completar a tarefa.
 - Repositório no Github com o seu código.
 - O README do seu projeto deve conter:
   - Instruções para rodar o projeto, caso necessário.
-  - Tecnologias usadas e a razão da escola delas.
+  - Tecnologias usadas e a razão da escolha delas.
 
 ## Prazo
 
