@@ -32,12 +32,22 @@ Você deve enviar a documentação das requisições pelo [Postman](https://www.
 ### Prazo
 Você tem 7 dias a partir da data que o desafio foi enviado pra você.
 
-## Tecnologias
+## Tecnologias (PHP)
 
 - Banco de dados: MySQL ou MongoDB
 - Linguagem: PHP
 - Framework: [Laravel](https://laravel.com/docs/5.8)
 - Framework de teste: PHPUnit
+- API: Rest
+- Versionamento: Github
+- Arquitetura: MVC ou MVP
+
+## Tecnologias (Node)
+
+- Banco de dados: MySQL ou MongoDB
+- Linguagem: Node
+- Framework: [Express](https://expressjs.com/pt-br/)
+- Framework de teste: Jest ou Chai com Mocha
 - API: Rest
 - Versionamento: Github
 - Arquitetura: MVC ou MVP
@@ -75,9 +85,6 @@ A edicao de desconto deve permitir apenas a alteração do valor
 ### Listagem de reembolso
 A listagem deve conter todos os dados previamente cadastrados e páginados de 10 em 10 itens por página.
 
----
-### Exclusão de reembolso
-A exclusão do reembolso deve ser [softdelete](https://laravel.com/docs/5.8/eloquent#soft-deleting).
 
 ---
 
