@@ -13,24 +13,25 @@ O desafio é criar um sistema simples para pedir reembolsos. Esse sistema consis
 Para o teste ser considerado precisa atender aos requisitos minimos, será analisado:
 
 - organizacao do código
-- uso dos verbos HTTP
+- uso correto dos verbos HTTP
 - boas práticas de API Rest
 
 ### Será um diferencial (não é obrigatório)
 - Fazer upload de foto para evidencia dos gastos no reembolso
-- Além do relatório em json, poder baixar o relatório em csv 
-- Fazer autenticação
-- Aprovar o reembolso e bloquear edições dposteriores do reembolso
+- Além do relatório em json, poder baixar o relatório em formato CSV 
+- Fazer autenticação (JWT)
+- Aprovar o reembolso e bloquear edições posteriores do reembolso
 - Relatório
-- Testes unitários
+- Testes unitários (phpunit)
 
 ## Entrega
 
 ### Envio
-Você deve enviar a documentação das requisições pelo [Postman](https://www.getpostman.com/) e publicar um repositório no seu Github.
+Você deve enviar a documentação das requisições pelo [Postman](https://www.getpostman.com/) e publicar um repositório no seu Github
+que deve ser público e compartilhado ao final com a TradeUp.
 
 ### Prazo
-Você tem 7 dias a partir da data que o desafio foi enviado pra você.
+Você tem 5 dias a partir da data que o desafio foi enviado pra você.
 
 ## Tecnologias (PHP)
 
@@ -90,7 +91,7 @@ A listagem deve conter todos os dados previamente cadastrados e páginados de 10
 
 ### Relatório
 
-A API deve ser capaz de através de parâmetros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mes.
+A API deve ser capaz de através de parâmetros enviados na requisicao gerar um relatório do valor total de reembolsos por usuário e por mês.
 
 ```js
 {
